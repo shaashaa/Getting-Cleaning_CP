@@ -4,8 +4,11 @@ Data for the project: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfil
 
 The R script run_analysis.R,
 
-(1) Reads the training and test data; And then Merges the training and the test sets using rbind
-(2) Reads the festures data; Extracts the columns which has mean() or std() in their names; And then extracts the mean and standard deviation for each measurement
-(3) Reads the activities_label data; Updates with correct activity names and also update the column name
-(4) Appropriately labels the data set with descriptive variable names
-(5) Merges all the data into one; Getting average of each variable for each activity and each subject using ddply; Writing the obtained average data into a table (average_data.txt)
+* Reads the training and test data; And then the Training and the test data set, labels, activity are combined to one set
+* Reads the festures data; The data set column names are labelled using features list; Extracts the columns which has mean() or std() in their names; 
+* Reads the activities_label data; The activity is replaced by activity labels; 
+* The subject and the activity columns names are labelled
+* Merges all the data into one; 
+* Summarised the mean for each activity and subject 
+* Writing the obtained average data into a table (Tidy_Average.txt)
+
